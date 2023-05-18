@@ -1,3 +1,4 @@
+using DevExpress.Drawing.Printing;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +17,7 @@ namespace PreviewAndPrint {
             // set advanced print options, if needed
             chartControl1.OptionsPrint.SizeMode = DevExpress.XtraCharts.Printing.PrintSizeMode.Zoom;
             printableComponentLink1.Landscape = true;
-            printableComponentLink1.PaperKind = System.Drawing.Printing.PaperKind.A4;
+            printableComponentLink1.PaperKind = DXPaperKind.A4;
         }
 
         private void simpleButton1_Click(object sender, EventArgs e) {
